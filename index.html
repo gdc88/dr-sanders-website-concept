@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#172229">
+  <meta name="description" content="Nicht öffentliche Arbeitsfassung für die Abstimmung eines neuen Webauftritts des Ingenieurbüros Dr. Sanders.">
+  <title>Dr. Sanders — Website-Konzept</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
+
+  <aside class="concept-bar" aria-label="Entwurfsstatus">
+    <span class="concept-dot" aria-hidden="true"></span>
+    <strong data-i18n="draftLabel">Arbeitskonzept</strong>
+    <span data-i18n="draftText">Nicht zur Veröffentlichung · Inhalte und Nachweise werden gemeinsam geprüft</span>
+  </aside>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">DS</span>
+      <span class="brand-copy">
+        <strong>Dr.-Ing. D. Sanders</strong>
+        <small data-i18n="brandSub">Ingenieurbüro · Bausachverständiger</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+      <span data-i18n="menu">Menü</span>
+      <span class="menu-lines" aria-hidden="true"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation" data-nav>
+      <a href="#leistungen" data-i18n="navServices">Leistungen</a>
+      <a href="#projekte" data-i18n="navProjects">Projekte</a>
+      <a href="#profil" data-i18n="navProfile">Profil</a>
+      <a href="#vorgehen" data-i18n="navProcess">Vorgehen</a>
+      <a class="nav-contact" href="#kontakt" data-i18n="navContact">Kontakt</a>
+    </nav>
+
+    <div class="language-switcher" role="group" aria-label="Sprache auswählen">
+      <button type="button" class="is-active" data-lang="de" aria-pressed="true">DE</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Baugutachten · Qualität · Projektsteuerung</p>
+        <h1 id="hero-title" data-i18n="heroTitle">Technische Klarheit für Bau und Immobilien.</h1>
+        <p class="hero-lead" data-i18n="heroLead">Unabhängige Begutachtung, belastbare Planung und verantwortliche Steuerung – von der ersten Prüfung bis zur Übergabe.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#kontakt" data-i18n="heroCta">Projekt besprechen</a>
+          <a class="text-link" href="#projekte"><span data-i18n="heroSecondary">Ausgewählte Projekte</span><span aria-hidden="true">↘</span></a>
+        </div>
+        <dl class="hero-proof" aria-label="Erfahrungsangaben">
+          <div>
+            <dt>1978</dt>
+            <dd data-i18n="proofSince">Beginn der Tätigkeit im Bauwesen¹</dd>
+          </div>
+          <div>
+            <dt>100+</dt>
+            <dd data-i18n="proofPubs">wissenschaftliche Arbeiten¹</dd>
+          </div>
+          <div>
+            <dt>3</dt>
+            <dd data-i18n="proofPatents">Patente im Baustoffbereich¹</dd>
+          </div>
+        </dl>
+        <p class="source-note" data-i18n="proofNote">¹ Angaben des bestehenden Webauftritts; Nachweise und Formulierungen werden vor Veröffentlichung bestätigt.</p>
+      </div>
+
+      <figure class="hero-visual">
+        <img src="assets/geisberg.webp" alt="Bestands- und Neubauprojekt Geisbergstraße 6 in Berlin" width="960" height="1280">
+        <div class="technical-stamp" aria-hidden="true">
+          <span>BESTAND</span>
+          <span>PLANUNG</span>
+          <span>REALISIERUNG</span>
+        </div>
+        <figcaption>
+          <span class="caption-index">PROJEKT 01</span>
+          <strong>Geisbergstraße 6 · Berlin</strong>
+          <span data-i18n="heroCaption">Sanierung, Modernisierung und Neubau</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="leistungen" class="services section-shell" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="servicesEyebrow">Nicht nach Gewerken denken. Mit der Entscheidung des Kunden beginnen.</p>
+        <h2 id="services-title" data-i18n="servicesTitle">Was muss geklärt, abgesichert oder umgesetzt werden?</h2>
+      </div>
+
+      <div class="service-list">
+        <article class="service-row">
+          <span class="service-number">01</span>
+          <div>
+            <h3 data-i18n="service1Title">Immobilienkauf und Investition absichern</h3>
+            <p data-i18n="service1Text">Technische Prüfung, Wert- und Standortanalyse sowie belastbare Grundlagen vor einer weitreichenden Entscheidung.</p>
+          </div>
+          <span class="service-tags" data-i18n="service1Tags">Wertgutachten · Due Diligence · Standort</span>
+        </article>
+        <article class="service-row">
+          <span class="service-number">02</span>
+          <div>
+            <h3 data-i18n="service2Title">Mängel, Schäden und Ursachen klären</h3>
+            <p data-i18n="service2Text">Unabhängige Untersuchung, nachvollziehbare Dokumentation und fachliche Einordnung für die nächsten Schritte.</p>
+          </div>
+          <span class="service-tags" data-i18n="service2Tags">Gutachten · Beweissicherung · Thermografie</span>
+        </article>
+        <article class="service-row">
+          <span class="service-number">03</span>
+          <div>
+            <h3 data-i18n="service3Title">Ausführungsqualität kontrollieren</h3>
+            <p data-i18n="service3Text">Baubegleitende Prüfung, Abnahmen und transparente Nachverfolgung von Abweichungen und Restleistungen.</p>
+          </div>
+          <span class="service-tags" data-i18n="service3Tags">Qualitätskontrolle · Abnahme · Dokumentation</span>
+        </article>
+        <article class="service-row">
+          <span class="service-number">04</span>
+          <div>
+            <h3 data-i18n="service4Title">Planung und Verträge strukturieren</h3>
+            <p data-i18n="service4Text">Genehmigungen, Ausschreibung, Kosten und technische Vertragsgrundlagen als zusammenhängender Prozess.</p>
+          </div>
+          <span class="service-tags" data-i18n="service4Tags">HOAI · Ausschreibung · Vertragsmanagement</span>
+        </article>
+        <article class="service-row">
+          <span class="service-number">05</span>
+          <div>
+            <h3 data-i18n="service5Title">Komplexe Projekte verantwortlich steuern</h3>
+            <p data-i18n="service5Text">Koordination von Beteiligten, Terminen, Qualität und Entscheidungen – auch bei Sanierung und Krisensituationen.</p>
+          </div>
+          <span class="service-tags" data-i18n="service5Tags">Baumanagement · Sanierung · Projektentwicklung</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="projekte" class="projects" aria-labelledby="projects-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow" data-i18n="projectsEyebrow">Erfahrung wird nachvollziehbar, wenn Rolle und Ergebnis sichtbar sind.</p>
+            <h2 id="projects-title" data-i18n="projectsTitle">Ausgewählte Projekterfahrung</h2>
+          </div>
+          <p class="section-intro" data-i18n="projectsIntro">Die Arbeitsfassung zeigt, wie bestehende Referenzen von einer Bildergalerie zu belastbaren Fallbeispielen weiterentwickelt werden können.</p>
+        </div>
+
+        <article class="featured-case">
+          <div class="case-image">
+            <img src="assets/ollenhauer.webp" alt="Mehrfamilienhaus Ollenhauer Straße 35 in Berlin" width="1068" height="774" loading="lazy">
+            <span class="image-label" data-i18n="verifiedExisting">Öffentliches Bestandsprojekt</span>
+          </div>
+          <div class="case-content">
+            <p class="case-kicker">Berlin · 2021–2022</p>
+            <h3 data-i18n="caseTitle">Mehrfamilienhaus Ollenhauer Straße 35</h3>
+            <p class="case-summary" data-i18n="caseSummary">Von der konzeptionellen Lösung im bestehenden Wohngebiet bis zur schlüsselfertigen Übergabe.</p>
+            <dl class="case-facts">
+              <div>
+                <dt data-i18n="caseTaskLabel">Aufgabe</dt>
+                <dd data-i18n="caseTask">Planung und Bau eines neuen Mehrfamilienhauses</dd>
+              </div>
+              <div>
+                <dt data-i18n="caseScopeLabel">Leistungsbild laut Bestand</dt>
+                <dd data-i18n="caseScope">Genehmigungen, Arbeits- und Ausschreibungsunterlagen, Koordination und Bauüberwachung</dd>
+              </div>
+              <div>
+                <dt data-i18n="caseProofLabel">Vor Veröffentlichung ergänzen</dt>
+                <dd data-i18n="caseProof">Rolle, Projektkennzahlen, Ergebnis, Freigaben und weitere Bildrechte</dd>
+              </div>
+            </dl>
+            <a class="text-link" href="https://ingenieurbuero-sanders.de/portfolio-items/mehrfamilienhaus-ollenhauer-str-35-13403-berlin/" rel="noopener noreferrer" target="_blank">
+              <span data-i18n="viewSource">Bestehende Projektquelle öffnen</span><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="assets/stade.webp" alt="Logistikzentrum in Stade" width="1800" height="1350" loading="lazy">
+            <div class="project-card-copy">
+              <p>Stade · 2021–2022</p>
+              <h3 data-i18n="stadeTitle">Logistikzentrum mit Parkhaus</h3>
+              <ul>
+                <li data-i18n="stadeFact1">10.000 m² Ausbaufläche</li>
+                <li data-i18n="stadeFact2">2.800 m² Mezzanine</li>
+                <li data-i18n="stadeFact3">ca. 30 Mio. € Bauvolumen¹</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card project-card-dark">
+            <img src="assets/geisberg.webp" alt="Projekt Geisbergstraße 6 in Berlin" width="960" height="1280" loading="lazy">
+            <div class="project-card-copy">
+              <p>Berlin · 2019</p>
+              <h3 data-i18n="geisbergTitle">Geisbergstraße 6</h3>
+              <ul>
+                <li data-i18n="geisbergFact1">120 Wohnungen modernisiert</li>
+                <li data-i18n="geisbergFact2">58 neue Apartments</li>
+                <li data-i18n="geisbergFact3">38 Mio. € Projektkosten¹</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <p class="source-note source-note-light" data-i18n="projectNote">¹ Bestandsangaben aus dem aktuellen öffentlichen Projektarchiv; Aufgabenanteile, Zahlen und Nutzungsrechte werden vor Veröffentlichung bestätigt.</p>
+      </div>
+    </section>
+
+    <section id="profil" class="profile section-shell" aria-labelledby="profile-title">
+      <div class="profile-monogram" aria-hidden="true">
+        <span>Dr.</span>
+        <strong>DS</strong>
+        <small>ING.</small>
+      </div>
+      <div class="profile-copy">
+        <p class="eyebrow" data-i18n="profileEyebrow">Wissenschaft · Planung · Ausführung · Bewertung</p>
+        <h2 id="profile-title" data-i18n="profileTitle">Fachliche Tiefe statt austauschbarer Versprechen.</h2>
+        <p class="profile-lead" data-i18n="profileLead">Der neue Auftritt soll nicht nur Leistungen aufzählen. Er soll erklären, wie Dr.-Ing. D. Sanders technische Risiken einordnet, Entscheidungen vorbereitet und komplexe Vorhaben bis zur Umsetzung begleitet.</p>
+        <div class="evidence-ledger">
+          <div>
+            <span class="status status-ready" data-i18n="statusExisting">Im Bestand vorhanden</span>
+            <strong data-i18n="ledger1Title">Beruflicher Werdegang</strong>
+            <p data-i18n="ledger1Text">Tätigkeit seit 1978, Unternehmensgründung 1995, Sachverständigentätigkeit seit 2001.</p>
+          </div>
+          <div>
+            <span class="status status-check" data-i18n="statusCheck">Zu bestätigen</span>
+            <strong data-i18n="ledger2Title">Qualifikationen und Status</strong>
+            <p data-i18n="ledger2Text">Bezeichnungen, Kammerzugehörigkeit, Zertifikate und Versicherungsangaben.</p>
+          </div>
+          <div>
+            <span class="status status-build" data-i18n="statusBuild">Auszubauen</span>
+            <strong data-i18n="ledger3Title">Publikationen und Patente</strong>
+            <p data-i18n="ledger3Text">Auswahl, bibliografische Daten, Relevanz und überprüfbare Verweise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vorgehen" class="process" aria-labelledby="process-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="eyebrow" data-i18n="processEyebrow">Der Weg zum neuen Auftritt</p>
+            <h2 id="process-title" data-i18n="processTitle">Gestalten, ohne das Bestehende zu gefährden.</h2>
+          </div>
+          <p class="section-intro" data-i18n="processIntro">Der neue Webauftritt entsteht getrennt vom laufenden System. Erst nach fachlicher, technischer und inhaltlicher Abnahme wird kontrolliert umgestellt.</p>
+        </div>
+        <ol class="process-steps">
+          <li>
+            <span>01</span>
+            <h3 data-i18n="process1Title">Verstehen und sichern</h3>
+            <p data-i18n="process1Text">Ziele, Zielgruppen, Systeme, Zugänge, Abhängigkeiten und wiederherstellbare Backups klären.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3 data-i18n="process2Title">Struktur und Beweise</h3>
+            <p data-i18n="process2Text">Leistungen, Kundenfragen, Fälle, Nachweise und Sprachversionen verbindlich ordnen.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3 data-i18n="process3Title">Auf Staging umsetzen</h3>
+            <p data-i18n="process3Text">Design, Inhalte, Formulare, Performance, Barrierearmut und technische Grundlagen separat testen.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3 data-i18n="process4Title">Kontrolliert starten</h3>
+            <p data-i18n="process4Text">Weiterleitungen, DNS, E-Mail, Analytics, Formulare und Rollback vor dem Umschalten verifizieren.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact section-shell" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow" data-i18n="contactEyebrow">Der nächste Schritt</p>
+        <h2 id="contact-title" data-i18n="contactTitle">Zuerst die richtige Aufgabe definieren.</h2>
+        <p data-i18n="contactText">In einem ersten Gespräch werden Prioritäten, verfügbare Nachweise und der technische Ausgangspunkt geklärt. Danach lassen sich Umfang, Verantwortung und ein belastbarer Umsetzungsweg festlegen.</p>
+      </div>
+      <address class="contact-panel">
+        <span data-i18n="contactDraft">Kontaktweg im Konzept – keine Formulardaten werden gespeichert</span>
+        <a href="tel:+4933284289594">03328 4289594</a>
+        <a href="tel:+4917612223345">01761 2223345</a>
+        <a href="mailto:dr.sanders@ingenieurbuero-sanders.de">dr.sanders@ingenieurbuero-sanders.de</a>
+        <p>Manitoba Straße 9 · 14513 Teltow</p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Dr.-Ing. D. Sanders</strong>
+      <span data-i18n="footerSub">Ingenieurbüro · Bausachverständiger</span>
+    </div>
+    <p data-i18n="footerDraft">Arbeitsfassung 01 · zur gemeinsamen Abstimmung · nicht zur Veröffentlichung</p>
+    <a href="#top" data-i18n="backTop">Nach oben ↑</a>
+  </footer>
+
+</body>
+</html>

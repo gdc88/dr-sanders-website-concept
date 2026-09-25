@@ -1,0 +1,10 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Local QA artifacts
+qa/
+playwright-report/
+test-results/
