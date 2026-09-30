@@ -16,9 +16,16 @@
   <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt springen</a>
 
   <aside class="concept-bar" aria-label="Entwurfsstatus">
-    <span class="concept-dot" aria-hidden="true"></span>
-    <strong data-i18n="draftLabel">Arbeitskonzept</strong>
-    <span data-i18n="draftText">Nicht zur Veröffentlichung · Inhalte und Nachweise werden gemeinsam geprüft</span>
+    <div class="concept-status">
+      <span class="concept-dot" aria-hidden="true"></span>
+      <strong data-i18n="draftLabel">Arbeitskonzept</strong>
+      <span data-i18n="draftText">Öffentlich einsehbarer Entwurf · noch nicht als Produktionswebsite freigegeben</span>
+    </div>
+    <div class="theme-switcher" role="group" aria-label="Farbvariante auswählen">
+      <span data-i18n="themeLabel">Farbvariante</span>
+      <button type="button" class="is-active" data-theme-choice="steel" aria-pressed="true" data-i18n="themeSteel">Stahlblau</button>
+      <button type="button" data-theme-choice="green" aria-pressed="false" data-i18n="themeGreen">Graphitgrün</button>
+    </div>
   </aside>
 
   <header class="site-header" data-header>
@@ -36,7 +43,7 @@
     </button>
 
     <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation" data-nav>
-      <a href="#wege" data-i18n="navPaths">Ihr Vorhaben</a>
+      <a href="#probleme" data-i18n="navPaths">Ihr Problem</a>
       <a href="#leistungen" data-i18n="navServices">Leistungen</a>
       <a href="#projekte" data-i18n="navProjects">Projekte</a>
       <a href="#profil" data-i18n="navProfile">Profil</a>
@@ -54,13 +61,13 @@
   <main id="main">
     <section id="top" class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="heroEyebrow">Berlin · Teltow · Brandenburg</p>
-        <h1 id="hero-title" data-i18n="heroTitle">Komplexe Ingenieur&shy;leistungen für Immobilien und Bauprojekte.</h1>
-        <p class="hero-lead" data-i18n="heroLead">Technische Prüfung, Bewertung, Planung und Bauleitung – einzeln oder als abgestimmter Weg bis zur Übergabe.</p>
+        <p class="eyebrow" data-i18n="heroEyebrow">Technische Expertise · Berlin · Teltow · Brandenburg</p>
+        <h1 id="hero-title" data-i18n="heroTitle">Technische Expertise für Immobilien und Bauprojekte.</h1>
+        <p class="hero-lead" data-i18n="heroLead">Schäden erkennen, Werte beurteilen, Bauvorhaben planen und die Ausführung fachlich begleiten.</p>
         <p class="scope-note" data-i18n="heroScope">Wir prüfen, planen, koordinieren und überwachen. Die Bauausführung erfolgt durch beauftragte Fachunternehmen.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#kontakt" data-i18n="heroCta">Projekt besprechen</a>
-          <a class="text-link" href="#projekte"><span data-i18n="heroSecondary">Ausgewählte Projekte</span><span aria-hidden="true">↘</span></a>
+          <a class="button button-primary" href="#kontakt" data-i18n="heroCta">Anliegen besprechen</a>
+          <a class="text-link" href="#probleme"><span data-i18n="heroSecondary">Eigenes Problem finden</span><span aria-hidden="true">↘</span></a>
         </div>
         <dl class="hero-proof" aria-label="Erfahrungsangaben">
           <div>
@@ -80,7 +87,7 @@
       </div>
 
       <figure class="hero-visual">
-        <img src="assets/geisberg.webp" alt="Bestands- und Neubauprojekt Geisbergstraße 6 in Berlin" width="960" height="1280">
+        <img src="assets/geisberg.webp" alt="Mehrgeschossiges Wohn- und Bestandsprojekt in Berlin" width="960" height="1280">
         <div class="technical-stamp" aria-hidden="true">
           <span>BESTAND</span>
           <span>PLANUNG</span>
@@ -88,39 +95,29 @@
         </div>
         <figcaption>
           <span class="caption-index">PROJEKT 01</span>
-          <strong>Geisbergstraße 6 · Berlin</strong>
+          <strong data-i18n="heroProject">Wohn- und Bestandsprojekt · Berlin</strong>
           <span data-i18n="heroCaption">Sanierung, Modernisierung und Neubau</span>
         </figcaption>
       </figure>
     </section>
 
-    <section id="wege" class="client-paths section-shell" aria-labelledby="paths-title">
+    <section id="probleme" class="client-problems section-shell" aria-labelledby="problems-title">
       <div class="section-heading section-heading-split">
         <div>
-          <p class="eyebrow" data-i18n="pathsEyebrow">Ein Ansprechpartner · einzelne Module oder abgestimmtes Gesamtpaket</p>
-          <h2 id="paths-title" data-i18n="pathsTitle">Welches Vorhaben möchten Sie sicher entscheiden?</h2>
+          <p class="eyebrow" data-i18n="problemsEyebrow">Der Einstieg folgt Ihrer konkreten Situation</p>
+          <h2 id="problems-title" data-i18n="problemsTitle">Welches Problem möchten Sie klären?</h2>
         </div>
-        <p class="section-intro" data-i18n="pathsIntro">Der Einstieg folgt Ihrer Situation – nicht einer unübersichtlichen Liste technischer Gewerke.</p>
+        <p class="section-intro" data-i18n="problemsIntro">Wählen Sie die Frage, die Ihrem Fall am nächsten kommt. Darunter sehen Sie die passende technische Leistung.</p>
       </div>
-      <div class="path-grid">
-        <article class="path-card">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 22 24 8l17 14v18H7V22Z"/><path d="M17 40V27h14v13M32 14l7 6"/><circle cx="34" cy="31" r="7"/><path d="m39 36 5 5"/></svg>
-          <p class="path-index">01</p>
-          <h3 data-i18n="path1Title">Immobilie kaufen oder verkaufen</h3>
-          <p data-i18n="path1Text">Technischen Zustand, erkennbare Risiken, Folgekosten und Marktwert getrennt und nachvollziehbar prüfen.</p>
-        </article>
-        <article class="path-card">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32M12 40V17l12-9 12 9v23"/><path d="M18 25h12M18 31h8M31 13l8-6M36 7h3v3"/></svg>
-          <p class="path-index">02</p>
-          <h3 data-i18n="path2Title">Bestand prüfen, sanieren oder umbauen</h3>
-          <p data-i18n="path2Text">Schäden und Ursachen klären, Maßnahmen planen und die Ausführung fachlich begleiten.</p>
-        </article>
-        <article class="path-card">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36M10 40V20l14-8 14 8v20"/><path d="M24 12V5M20 9l4-4 4 4M16 27h16M16 33h16"/></svg>
-          <p class="path-index">03</p>
-          <h3 data-i18n="path3Title">Neu bauen – von der Planung bis zur Übergabe</h3>
-          <p data-i18n="path3Text">Genehmigung, Ausschreibung, Vergabe, Bauleitung, Qualitätskontrolle und Abnahme als abgestimmter Prozess.</p>
-        </article>
+      <div class="problem-grid">
+        <a class="problem-card" href="#leistungen"><span class="problem-index">01</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40 20 8l5 13 5-8 10 27M15 27l7 4 6-5 7 4"/></svg><strong data-i18n="problem1Title">Risse in Wand oder Decke – harmlos oder gefährlich?</strong><span data-i18n="problem1Service">Bau- und Schadengutachten</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">02</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C18 15 12 22 12 30a12 12 0 0 0 24 0c0-8-6-15-12-24Z"/><path d="M18 32c2 4 5 6 9 6"/></svg><strong data-i18n="problem2Title">Feuchtigkeit, Schimmel oder Wasser im Keller – was ist die Ursache?</strong><span data-i18n="problem2Service">Ursachenanalyse und Gutachten</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">03</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m6 25 18-15 18 15M10 22v18h28V22"/><path d="M18 17h12M32 29c0 4-3 7-7 7"/></svg><strong data-i18n="problem3Title">Undichtes Dach oder feuchte Fassade – wo liegt der Fehler?</strong><span data-i18n="problem3Service">Bestands- und Schadensprüfung</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">04</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32M12 40V15h24v25M17 22h14M17 28h14"/><path d="m30 35 3 3 7-8"/></svg><strong data-i18n="problem4Title">Wie erkenne ich, ob auf meiner Baustelle richtig gebaut wird?</strong><span data-i18n="problem4Service">Bauleitung und Qualitätskontrolle</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">05</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 7h28v34H10zM16 15h16M16 22h16M16 29h8"/><path d="m28 34 3 3 7-8"/></svg><strong data-i18n="problem5Title">Die Bauabnahme steht an – wie übersehe ich keine Mängel?</strong><span data-i18n="problem5Service">Abnahmebegleitung</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">06</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 22 24 8l17 14v18H7V22Z"/><path d="M17 40V27h14v13"/><circle cx="35" cy="32" r="6"/><path d="m39 37 5 5"/></svg><strong data-i18n="problem6Title">Welche versteckten Mängel hat das Bestandsgebäude?</strong><span data-i18n="problem6Service">Technische Kaufberatung</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">07</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 38h30M13 34V17h22v17M19 17V11h10v6"/><path d="M18 26h12M24 21v10"/></svg><strong data-i18n="problem7Title">Was ist die Immobilie oder das Grundstück wirklich wert?</strong><span data-i18n="problem7Service">Immobilienbewertung und Wertgutachten</span></a>
+        <a class="problem-card" href="#leistungen"><span class="problem-index">08</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 40h34M11 40V21l13-9 13 9v19"/><path d="M16 29h16M24 12V5M20 9l4-4 4 4"/></svg><strong data-i18n="problem8Title">Umbau oder Sanierung geplant – was ist sinnvoll und machbar?</strong><span data-i18n="problem8Service">Bauplanung und Genehmigung</span></a>
       </div>
     </section>
 
@@ -174,7 +171,7 @@
         <article class="service-row">
           <span class="service-number">06</span>
           <div>
-            <h3 data-i18n="service6Title">Ausschreibung, Vergabe und Baubegleitung</h3>
+            <h3 data-i18n="service6Title">Vom Leistungsverzeichnis bis zur Abnahme</h3>
             <p data-i18n="service6Text">Leistungsumfang strukturieren, Angebote vergleichen, Fachunternehmen auswählen und die Ausführung bis zur Abnahme begleiten.</p>
           </div>
           <span class="service-tags" data-i18n="service6Tags">Ausschreibung · Vergabe · Abnahme</span>
@@ -192,62 +189,32 @@
           <p class="section-intro" data-i18n="projectsIntro">Die Arbeitsfassung zeigt, wie bestehende Referenzen von einer Bildergalerie zu belastbaren Fallbeispielen weiterentwickelt werden können.</p>
         </div>
 
-        <article class="featured-case">
+        <article class="featured-case concept-case">
           <div class="case-image">
-            <img src="assets/ollenhauer.webp" alt="Mehrfamilienhaus Ollenhauer Straße 35 in Berlin" width="1068" height="774" loading="lazy">
-            <span class="image-label" data-i18n="verifiedExisting">Öffentliches Bestandsprojekt</span>
+            <img src="assets/geisberg.webp" alt="Mehrgeschossige Wohnanlage als Platzhalter für eine spätere Fallstudie" width="960" height="1280" loading="lazy">
+            <span class="image-label" data-i18n="caseStatus">Beispielstruktur · Projektdaten vor Freigabe</span>
           </div>
           <div class="case-content">
-            <p class="case-kicker">Berlin · 2021–2022</p>
-            <h3 data-i18n="caseTitle">Mehrfamilienhaus Ollenhauer Straße 35</h3>
-            <p class="case-summary" data-i18n="caseSummary">Von der konzeptionellen Lösung im bestehenden Wohngebiet bis zur schlüsselfertigen Übergabe.</p>
+            <p class="case-kicker" data-i18n="caseKicker">Wohnanlage · Bestand</p>
+            <h3 data-i18n="caseTitle">Balkone und Fassade technisch prüfen und sanieren</h3>
+            <p class="case-summary" data-i18n="caseSummary">So kann ein späterer Fall die Ausgangslage, die fachliche Aufgabe und den Nutzen für den Auftraggeber verständlich zeigen.</p>
             <dl class="case-facts">
               <div>
-                <dt data-i18n="caseTaskLabel">Aufgabe</dt>
-                <dd data-i18n="caseTask">Planung und Bau eines neuen Mehrfamilienhauses</dd>
+                <dt data-i18n="caseTaskLabel">Ausgangslage</dt>
+                <dd data-i18n="caseTask">Schäden und Sanierungsbedarf an Balkonen und Fassaden einer bestehenden Wohnanlage.</dd>
               </div>
               <div>
-                <dt data-i18n="caseScopeLabel">Leistungsbild laut Bestand</dt>
-                <dd data-i18n="caseScope">Genehmigungen, Arbeits- und Ausschreibungsunterlagen, Koordination und Bauüberwachung</dd>
+                <dt data-i18n="caseScopeLabel">Fachliche Aufgabe</dt>
+                <dd data-i18n="caseScope">Bestand aufnehmen, Ursachen einordnen, Maßnahmen planen und die Umsetzung fachlich begleiten.</dd>
               </div>
               <div>
-                <dt data-i18n="caseProofLabel">Vor Veröffentlichung ergänzen</dt>
-                <dd data-i18n="caseProof">Rolle, Projektkennzahlen, Ergebnis, Freigaben und weitere Bildrechte</dd>
+                <dt data-i18n="caseProofLabel">Vor Produktion</dt>
+                <dd data-i18n="caseProof">Konkretes Objekt, Rolle, Ergebnis, Freigaben und Bildrechte werden gemeinsam bestätigt.</dd>
               </div>
             </dl>
-            <a class="text-link" href="https://ingenieurbuero-sanders.de/portfolio-items/mehrfamilienhaus-ollenhauer-str-35-13403-berlin/" rel="noopener noreferrer" target="_blank">
-              <span data-i18n="viewSource">Bestehende Projektquelle öffnen</span><span aria-hidden="true">↗</span>
-            </a>
           </div>
         </article>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <img src="assets/stade.webp" alt="Logistikzentrum in Stade" width="1800" height="1350" loading="lazy">
-            <div class="project-card-copy">
-              <p>Stade · 2021–2022</p>
-              <h3 data-i18n="stadeTitle">Logistikzentrum mit Parkhaus</h3>
-              <ul>
-                <li data-i18n="stadeFact1">10.000 m² Ausbaufläche</li>
-                <li data-i18n="stadeFact2">2.800 m² Mezzanine</li>
-                <li data-i18n="stadeFact3">ca. 30 Mio. € Bauvolumen¹</li>
-              </ul>
-            </div>
-          </article>
-          <article class="project-card project-card-dark">
-            <img src="assets/geisberg.webp" alt="Projekt Geisbergstraße 6 in Berlin" width="960" height="1280" loading="lazy">
-            <div class="project-card-copy">
-              <p>Berlin · 2019</p>
-              <h3 data-i18n="geisbergTitle">Geisbergstraße 6</h3>
-              <ul>
-                <li data-i18n="geisbergFact1">120 Wohnungen modernisiert</li>
-                <li data-i18n="geisbergFact2">58 neue Apartments</li>
-                <li data-i18n="geisbergFact3">38 Mio. € Projektkosten¹</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-        <p class="source-note source-note-light" data-i18n="projectNote">¹ Bestandsangaben aus dem aktuellen öffentlichen Projektarchiv; Aufgabenanteile, Zahlen und Nutzungsrechte werden vor Veröffentlichung bestätigt.</p>
+        <p class="source-note source-note-light" data-i18n="projectNote">Das Bild stammt aus dem bestehenden öffentlichen Projektarchiv und dient im Arbeitskonzept nur als Platzhalter. Nutzung und Zuordnung werden vor Produktion bestätigt.</p>
       </div>
     </section>
 
@@ -258,26 +225,27 @@
         <small>ING.</small>
       </div>
       <div class="profile-copy">
-        <p class="eyebrow" data-i18n="profileEyebrow">Wissenschaft · Planung · Ausführung · Bewertung</p>
-        <h2 id="profile-title" data-i18n="profileTitle">Fachliche Tiefe statt austauschbarer Versprechen.</h2>
-        <p class="profile-lead" data-i18n="profileLead">Der neue Auftritt soll nicht nur Leistungen aufzählen. Er soll erklären, wie Dr.-Ing. D. Sanders technische Risiken einordnet, Entscheidungen vorbereitet und komplexe Vorhaben bis zur Umsetzung begleitet.</p>
+        <p class="eyebrow" data-i18n="profileEyebrow">Mehrere Perspektiven · ein technischer Ansprechpartner</p>
+        <h2 id="profile-title" data-i18n="profileTitle">Erfahrung aus Planung, Baupraxis und Begutachtung.</h2>
+        <p class="profile-lead" data-i18n="profileLead">Der Vorteil liegt in der Verbindung mehrerer praktischer Perspektiven für eine nachvollziehbare technische Entscheidung.</p>
         <div class="evidence-ledger">
           <div>
-            <span class="status status-ready" data-i18n="statusExisting">Im Bestand vorhanden</span>
-            <strong data-i18n="ledger1Title">Beruflicher Werdegang</strong>
-            <p data-i18n="ledger1Text">Tätigkeit seit 1978, Unternehmensgründung 1995, Sachverständigentätigkeit seit 2001.</p>
+            <span class="advantage-index">01</span>
+            <strong data-i18n="ledger1Title">Probleme im Bauablauf einordnen</strong>
+            <p data-i18n="ledger1Text">Planung, Ausführung und technische Prüfung werden nicht isoliert betrachtet, sondern als zusammenhängender Prozess.</p>
           </div>
           <div>
-            <span class="status status-check" data-i18n="statusCheck">Zu bestätigen</span>
-            <strong data-i18n="ledger2Title">Qualifikationen und Status</strong>
-            <p data-i18n="ledger2Text">Bezeichnungen, Kammerzugehörigkeit, Zertifikate und Versicherungsangaben.</p>
+            <span class="advantage-index">02</span>
+            <strong data-i18n="ledger2Title">Technik und Marktwert trennen</strong>
+            <p data-i18n="ledger2Text">Der bauliche Zustand und die wirtschaftliche Bewertung werden als unterschiedliche Fragen transparent behandelt.</p>
           </div>
           <div>
-            <span class="status status-build" data-i18n="statusBuild">Auszubauen</span>
-            <strong data-i18n="ledger3Title">Publikationen und Patente</strong>
-            <p data-i18n="ledger3Text">Auswahl, bibliografische Daten, Relevanz und überprüfbare Verweise.</p>
+            <span class="advantage-index">03</span>
+            <strong data-i18n="ledger3Title">Einzelleistung oder Gesamtweg</strong>
+            <p data-i18n="ledger3Text">Vom Gutachten bis zur Bauleitung können einzelne Module oder ein abgestimmter Weg vereinbart werden.</p>
           </div>
         </div>
+        <p class="source-note" data-i18n="profileNote">Konkrete Nachweise zu Werdegang, Patenten und Publikationen werden vor einer Produktionsfreigabe ergänzt.</p>
       </div>
     </section>
 
@@ -285,31 +253,31 @@
       <div class="section-shell">
         <div class="section-heading section-heading-split">
           <div>
-            <p class="eyebrow" data-i18n="processEyebrow">Der Weg zum neuen Auftritt</p>
-            <h2 id="process-title" data-i18n="processTitle">Gestalten, ohne das Bestehende zu gefährden.</h2>
+            <p class="eyebrow" data-i18n="processEyebrow">Vom Anliegen zur belastbaren Entscheidung</p>
+            <h2 id="process-title" data-i18n="processTitle">Ein nachvollziehbarer technischer Weg.</h2>
           </div>
-          <p class="section-intro" data-i18n="processIntro">Der neue Webauftritt entsteht getrennt vom laufenden System. Erst nach fachlicher, technischer und inhaltlicher Abnahme wird kontrolliert umgestellt.</p>
+          <p class="section-intro" data-i18n="processIntro">Der konkrete Ablauf hängt vom Auftrag ab. Das Konzept zeigt die gemeinsame Grundlogik, ohne feste Dauer oder Ergebnisse zu versprechen.</p>
         </div>
         <ol class="process-steps">
           <li>
             <span>01</span>
-            <h3 data-i18n="process1Title">Verstehen und sichern</h3>
-            <p data-i18n="process1Text">Ziele, Zielgruppen, Systeme, Zugänge, Abhängigkeiten und wiederherstellbare Backups klären.</p>
+            <h3 data-i18n="process1Title">Problem und Unterlagen</h3>
+            <p data-i18n="process1Text">Anliegen, Objekt, vorhandene Pläne, Bilder und bisherige Maßnahmen werden eingeordnet.</p>
           </li>
           <li>
             <span>02</span>
-            <h3 data-i18n="process2Title">Struktur und Beweise</h3>
-            <p data-i18n="process2Text">Leistungen, Kundenfragen, Fälle, Nachweise und Sprachversionen verbindlich ordnen.</p>
+            <h3 data-i18n="process2Title">Technische Untersuchung</h3>
+            <p data-i18n="process2Text">Je nach Aufgabe folgen Ortsbesichtigung, Bestandsprüfung oder Auswertung der verfügbaren Dokumentation.</p>
           </li>
           <li>
             <span>03</span>
-            <h3 data-i18n="process3Title">Auf Staging umsetzen</h3>
-            <p data-i18n="process3Text">Design, Inhalte, Formulare, Performance, Barrierearmut und technische Grundlagen separat testen.</p>
+            <h3 data-i18n="process3Title">Einordnung und Lösung</h3>
+            <p data-i18n="process3Text">Feststellungen, mögliche Ursachen und sinnvolle nächste Maßnahmen werden nachvollziehbar dargestellt.</p>
           </li>
           <li>
             <span>04</span>
-            <h3 data-i18n="process4Title">Kontrolliert starten</h3>
-            <p data-i18n="process4Text">Weiterleitungen, DNS, E-Mail, Analytics, Formulare und Rollback vor dem Umschalten verifizieren.</p>
+            <h3 data-i18n="process4Title">Begleitung bis zur Abnahme</h3>
+            <p data-i18n="process4Text">Wenn vereinbart, werden Planung, Auswahl der Fachunternehmen, Ausführung und Abnahme fachlich begleitet.</p>
           </li>
         </ol>
       </div>
@@ -318,8 +286,8 @@
     <section id="kontakt" class="contact section-shell" aria-labelledby="contact-title">
       <div class="contact-copy">
         <p class="eyebrow" data-i18n="contactEyebrow">Der nächste Schritt</p>
-        <h2 id="contact-title" data-i18n="contactTitle">Zuerst die richtige Aufgabe definieren.</h2>
-        <p data-i18n="contactText">In einem ersten Gespräch werden Prioritäten, verfügbare Nachweise und der technische Ausgangspunkt geklärt. Danach lassen sich Umfang, Verantwortung und ein belastbarer Umsetzungsweg festlegen.</p>
+        <h2 id="contact-title" data-i18n="contactTitle">Beschreiben Sie kurz Ihr Problem.</h2>
+        <p data-i18n="contactText">Objekt, Situation und vorhandene Unterlagen bilden den Ausgangspunkt. Danach kann geklärt werden, welche technische Leistung sinnvoll ist.</p>
       </div>
       <address class="contact-panel">
         <span data-i18n="contactDraft">Kontaktweg im Konzept – keine Formulardaten werden gespeichert</span>
@@ -336,7 +304,7 @@
       <strong>Dr.-Ing. D. Sanders</strong>
       <span data-i18n="footerSub">Ingenieurbüro · Immobilien und Bauprojekte</span>
     </div>
-    <p data-i18n="footerDraft">Arbeitsfassung 01 · zur gemeinsamen Abstimmung · nicht zur Veröffentlichung</p>
+    <p data-i18n="footerDraft">Arbeitsfassung 02 · öffentlich einsehbarer Entwurf · nicht als Produktionswebsite freigegeben</p>
     <a href="#top" data-i18n="backTop">Nach oben ↑</a>
   </footer>
 

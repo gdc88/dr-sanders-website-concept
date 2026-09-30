@@ -1,5 +1,32 @@
 # Verification report
 
+## Final Arbeitskonzept verified on 30 September 2026
+
+The second working concept implements the client's latest direction:
+
+- the page now starts with eight concrete client problems before services;
+- six services remain in the confirmed priority order;
+- the hero emphasizes technical expertise and integrated support;
+- technical condition and market valuation remain separate;
+- the sixth service is framed as a client journey from specification to acceptance;
+- the competitor-comparison table was not adopted;
+- the case study is anonymized and visibly marked as a structure pending project approval;
+- the public draft label accurately states that the concept is viewable but not production-approved;
+- steel-blue and graphite-green palette options can be switched in-page and selected with `?theme=steel` or `?theme=green`.
+
+Verification evidence:
+
+- W3C Nu HTML validator: **0 messages**;
+- JavaScript syntax and Git whitespace checks: passed;
+- 107 visible translation keys complete in DE/RU/EN;
+- exactly 8 problem cards and 6 service rows;
+- no duplicate IDs, missing local assets, forms, masked telephone links, or old client-path section;
+- Lighthouse: Performance **99**, Accessibility **100**, Best Practices **100**, SEO **66** (intentional `noindex` prototype);
+- desktop 1440×1100 steel and graphite-green variants visually passed;
+- Russian mobile 375×900 visually passed after increasing theme controls to 44px minimum height;
+- tall-viewport hero height is capped to prevent artificial blank space before the following sections;
+- full sequence visually confirmed: hero → problems → services → anonymized case → neutral advantages → process → contact → footer.
+
 ## Update verified on 30 September 2026
 
 The discussion concept was aligned with the latest client interview before publication:
