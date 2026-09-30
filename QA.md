@@ -1,6 +1,26 @@
 # Verification report
 
-Verified locally on 25 September 2026 before GitHub Pages publication.
+## Update verified on 30 September 2026
+
+The discussion concept was aligned with the latest client interview before publication:
+
+- hero now presents integrated engineering services for Berlin, Teltow and Brandenburg;
+- three client paths explain purchase/sale, existing-property work and new construction;
+- technical condition assessment is explicitly separated from market valuation;
+- six services are ordered by the client's stated business priority;
+- the scope note makes clear that specialist contractors perform construction work;
+- no unverified branch offices, brokerage/legal services, testimonials or universal-service claims were added.
+
+Current checks:
+
+- JavaScript syntax (`node --check`) and Git whitespace checks passed;
+- 103 visible translation keys are complete in DE/RU/EN;
+- no duplicate IDs, missing local resources or images without alternative text;
+- required sections, 3 client paths and 6 service rows are present;
+- desktop 1440×1100 and mobile 375×900 first-screen visual QA passed after explicit German soft hyphenation;
+- full-site print review found no screen-content overflow; page splits remain print-only artifacts.
+
+Verified locally on 25 September 2026 before the original GitHub Pages publication.
 
 ## Automated checks
 
