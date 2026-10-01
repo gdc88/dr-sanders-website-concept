@@ -1,5 +1,31 @@
 # Verification report
 
+## Arbeitskonzept revision 03 verified on 1 October 2026
+
+This scoped revision follows the client's direct review of the published one-page concept rather than treating the newly supplied AI-style variants as approved requirements:
+
+- overlapping moisture, mould, basement-water, roof and façade entries were consolidated into one cause-and-damage path;
+- the problem grid now contains seven distinct situations in a balanced 4 + 3 desktop composition;
+- the neutral `Warum Dr. Sanders?` section now explains the connection between planning, practical construction experience and expert assessment;
+- the office role is stated consistently as inspection, planning, coordination and professional supervision, while appointed specialist contractors carry out construction work;
+- the example case now describes technical assessment and optional professional support instead of implying that the office performs refurbishment work;
+- the unverified `1978`, `100+` publications and `3` patents proof strip was removed from the public concept;
+- the hero photograph is labelled as a working image with project attribution and image rights still requiring confirmation;
+- all visible photograph labels and alternative text are localized in DE/RU/EN;
+- FAQ, Ratgeber, Turkish localization, named clients, prices, response promises and a multi-page production architecture were intentionally not added.
+
+Verification evidence:
+
+- W3C Nu HTML validator: **0 messages**;
+- JavaScript syntax and Git whitespace checks: passed;
+- every visible text and image-alt key is present in DE/RU/EN;
+- rendered DOM confirms `lang`, seven cards, `Warum Dr. Sanders?`, contractor boundaries and working-image labels in all three languages;
+- exactly **7** problem cards and **6** service rows;
+- no duplicate IDs or missing local assets;
+- Lighthouse: Performance **99**, Accessibility **100**, Best Practices **100**, SEO **66**; the SEO score remains intentionally reduced by the concept's `noindex` policy;
+- German steel desktop, English graphite-green desktop and Russian graphite-green mobile visual checks passed;
+- full-page visual QA confirmed the balanced 4 + 3 problem grid, anonymized case, neutral differentiation section, contractor boundary, process, contact and footer without clipping or collisions.
+
 ## Final Arbeitskonzept verified on 30 September 2026
 
 The second working concept implements the client's latest direction:
